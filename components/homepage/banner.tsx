@@ -44,7 +44,7 @@ const Banner = () => {
       >
         {banner.map((item: any, index: number) => {
           return (
-            <SwiperSlide className="bg-white w-full relative">
+            <SwiperSlide className="bg-white w-full relative" key={item.title + index}>
               <div className="absolute top-0 left-0 w-full h-full bg-black/20"></div>
               <div className="absolute top-[50%] -translate-y-[50%] left-[50%] backdrop-blur-lg -translate-x-[50%] w-[40%] border-[2px] border-solid border-primary h-[80%] rounded-t-full py-0"></div>
               <div className="absolute  top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] z-10 flex flex-col gap-6 items-center">
